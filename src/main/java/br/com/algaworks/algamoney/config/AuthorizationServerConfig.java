@@ -20,6 +20,7 @@ public class AuthorizationServerConfig extends AuthorizationServerConfigurerAdap
 	
 	public static String grantType = "password"; 
 	
+	
 	@Autowired
 	private AuthenticationManager authenticationManager;
 	
