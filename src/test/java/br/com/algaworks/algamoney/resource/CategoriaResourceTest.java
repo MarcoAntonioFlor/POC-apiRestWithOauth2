@@ -1,4 +1,4 @@
-package br.com.algaworks.algamoney;
+package br.com.algaworks.algamoney.resource;
 
 import static org.hamcrest.Matchers.allOf;
 import static org.hamcrest.Matchers.equalTo;
