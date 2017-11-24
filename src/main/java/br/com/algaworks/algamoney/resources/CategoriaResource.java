@@ -21,9 +21,12 @@ import org.springframework.web.bind.annotation.RestController;
 import br.com.algaworks.algamoney.event.ResourceCreatedEvent;
 import br.com.algaworks.algamoney.model.Categoria;
 import br.com.algaworks.algamoney.service.CategoriaService;
+import io.swagger.annotations.Api;
+import io.swagger.annotations.ApiOperation;
 
 @RestController
 @RequestMapping("/categorias")
+@Api(value="categorias", description="Operações sobre as categorias")
 public class CategoriaResource {
 
 	@Autowired
@@ -31,7 +34,8 @@ public class CategoriaResource {
 
 	@Autowired
 	private ApplicationEventPublisher publisher;
-
+	
+	@ApiOperation(value = "Lista todas as categorias", response = Categoria.class, responseContainer="List")
 	@GetMapping
 	public ResponseEntity<?> listarCategorias() {
 		List<Categoria> listarCategorias = categoriaService.listar();

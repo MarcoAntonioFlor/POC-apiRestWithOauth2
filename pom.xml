@@ -80,7 +80,7 @@
 			<artifactId>jackson-datatype-jsr310</artifactId>
 		</dependency>
 		
-		<!-- Security and Oauth2  -->
+		<!-- Security and Oauth2  with JWT-->
 		<dependency>
 			<groupId>org.springframework.security</groupId>
 			<artifactId>spring-security-test</artifactId>
@@ -94,6 +94,11 @@
 			<groupId>org.springframework.security.oauth</groupId>
 			<artifactId>spring-security-oauth2</artifactId>
 		</dependency>
+		<dependency>
+		    <groupId>org.springframework.security</groupId>
+		    <artifactId>spring-security-jwt</artifactId>
+		</dependency>
+		
 		
 		<!-- documenting my api with swagger -->
 
